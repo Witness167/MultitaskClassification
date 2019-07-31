@@ -1,0 +1,23 @@
+MODEL:
+  ARCH: "facenet"
+  IMG_SIZE: 160
+  EMBEDDINGS: 256
+
+TRAIN:
+  OPT: "sgd"
+  WORKERS: 0
+  LR: 1e-3
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 5e-4
+  BATCH_SIZE: 16
+  MILESTONES: [20, 25]
+  EPOCHS: 30
+
+TEST:
+  WORKERS: 0
+  BATCH_SIZE: 32
+
+
+
+
+
